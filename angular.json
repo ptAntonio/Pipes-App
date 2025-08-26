@@ -4,6 +4,9 @@
   "newProjectRoot": "projects",
   "projects": {
     "pipes-app": {
+      "i18n": {
+        "sourceLocale": "es"
+      },
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -21,9 +24,8 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ]
+            "styles": ["src/styles.css"],
+            "polyfills": ["@angular/localize/init"]
           },
           "configurations": {
             "production": {
@@ -74,9 +76,8 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ]
+            "styles": ["src/styles.css"],
+            "polyfills": ["@angular/localize/init"]
           }
         }
       }
